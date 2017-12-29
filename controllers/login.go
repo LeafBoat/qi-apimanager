@@ -12,7 +12,7 @@ type LoginController struct {
 
 func (c *LoginController) Get() {
 	fmt.Println("登录页面")
-	c.TplName = "login.tpl"
+	c.TplName = "login.html"
 }
 
 func (c *LoginController) Post() {

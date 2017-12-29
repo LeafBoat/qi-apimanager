@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+		<style>
+			body {
+				text-align: center
+			}
+			
+			.layui-form {
+				margin: auto auto;
+			}
+		</style>
+		<script src="static/js/jquery-3.2.1.js"></script>
+		<script src="static/js/login/login.js"></script>
+	</head>
+
+	<body>
+		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+		<!--[if lt IE 9]>
+  			<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  			<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<form action="index.html" method="post" class="layui-form">
+			<div class="layui-form-item">
+				<input type="hidden" name="token" value="{{.}}" />
+			</div>
+			<div class="layui-form-item">
+				<input id="username" type="text" name="username" placeholder="请输入用户名" autocomplete="off" />
+				<span></span>
+			</div>
+			<div class="layui-form-item">
+				<input id="password" type="password" name="password" placeholder="请输入密码" autocomplete="off" />
+				<span></span>
+			</div>
+			<div class="layui-form-item">
+				<input type="button" value="登录" />
+			</div>
+		</form>
+		<a href="javascript:;">
+			<p id="register">注册</p>
+		</a>
+	</body>
+
+</html>
